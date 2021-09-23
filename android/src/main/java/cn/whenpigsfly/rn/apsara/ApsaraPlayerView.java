@@ -141,16 +141,16 @@ public class ApsaraPlayerView extends FrameLayout implements
     public void setRotate(final int rotation) {
         switch(rotation){
             case 0:
-                mPlayer.setRotation(RotateMode.ROTATE_0);
+                mPlayer.setRotateMode(RotateMode.ROTATE_0);
                 break;
             case 90:
-                mPlayer.setRotation(RotateMode.ROTATE_90);
+                mPlayer.setRotateMode(RotateMode.ROTATE_90);
                 break;
             case 180:
-                mPlayer.setRotation(RotateMode.ROTATE_180);
+                mPlayer.setRotateMode(RotateMode.ROTATE_180);
                 break;
             case 270:
-                mPlayer.setRotation(RotateMode.ROTATE_270);
+                mPlayer.setRotateMode(RotateMode.ROTATE_270);
         }
     }
 
