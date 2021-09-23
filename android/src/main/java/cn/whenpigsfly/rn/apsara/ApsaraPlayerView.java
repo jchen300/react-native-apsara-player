@@ -6,6 +6,7 @@ import android.widget.FrameLayout;
 import com.aliyun.downloader.AliDownloaderFactory;
 import com.aliyun.downloader.AliMediaDownloader;
 import com.aliyun.player.AliPlayer;
+import com.aliyun.player.IPlayer;
 import com.aliyun.player.AliPlayerFactory;
 import com.aliyun.player.bean.ErrorInfo;
 import com.aliyun.player.bean.InfoBean;
@@ -141,16 +142,16 @@ public class ApsaraPlayerView extends FrameLayout implements
     public void setRotate(final int rotation) {
         switch(rotation){
             case 0:
-                mPlayer.setRotateMode(RotateMode.ROTATE_0);
+                mPlayer.setRotateMode(IPlayer.RotateMode.ROTATE_0);
                 break;
             case 90:
-                mPlayer.setRotateMode(RotateMode.ROTATE_90);
+                mPlayer.setRotateMode(IPlayer.RotateMode.ROTATE_90);
                 break;
             case 180:
-                mPlayer.setRotateMode(RotateMode.ROTATE_180);
+                mPlayer.setRotateMode(IPlayer.RotateMode.ROTATE_180);
                 break;
             case 270:
-                mPlayer.setRotateMode(RotateMode.ROTATE_270);
+                mPlayer.setRotateMode(IPlayer.RotateMode.ROTATE_270);
         }
     }
 
