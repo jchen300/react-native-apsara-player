@@ -138,6 +138,22 @@ public class ApsaraPlayerView extends FrameLayout implements
         mPlayer.seekTo(position);
     }
 
+    public void setRotate(final int rotation) {
+        switch(rotation){
+            case 0:
+                mPlayer.setRotation(RotateMode.ROTATE_0);
+                break;
+            case 90:
+                mPlayer.setRotation(RotateMode.ROTATE_90);
+                break;
+            case 180:
+                mPlayer.setRotation(RotateMode.ROTATE_180);
+                break;
+            case 270:
+                mPlayer.setRotation(RotateMode.ROTATE_270);
+        }
+    }
+
     private VidSts getStsSource(Object obj) {
         if (obj == null) {
             return null;

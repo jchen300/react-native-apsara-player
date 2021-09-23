@@ -91,6 +91,11 @@ public class ApsaraPlayerManager extends SimpleViewManager<ApsaraPlayerView> {
         view.setSeek((long) seek);
     }
 
+    @ReactProp(name = "rotate", defaultInt = 0)
+    public void setRotate(final ApsaraPlayerView view, final int rotate) {
+        view.setRotate(rotate);
+    }
+
     @ReactProp(name = "source")
     public void setSource(final ApsaraPlayerView view, @Nullable ReadableMap source) {
         if (source == null) {
