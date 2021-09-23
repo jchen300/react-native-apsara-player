@@ -71,6 +71,7 @@ export default class ApsaraPlayer extends React.Component {
           paused={this.props.paused}
           volume={this.props.volume}
           muted={this.props.muted}
+          rotate={this.props.rotate}
           onVideoEnd={this.props.onEnd}
           onVideoLoad={this._onLoad}
           onVideoSeek={this._onSeek}
